@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "App notif no more",
+    "version": "1.0",
+    "description": "Removes the annoying 'add x as app for y' notifications",
+    "developer": {
+        "name": "adioe3",
+        "url": "https://github.com/adioe3/app-notif-no-more"
+    },
+
+    "icons": {
+        "48": "icons/noapp-please.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["main.js"]
+        }
+    ]
+}
